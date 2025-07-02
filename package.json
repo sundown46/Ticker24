@@ -1,0 +1,30 @@
+{
+  "name": "ticker24",
+  "version": "0.1.0",
+  "description": "Liveticker Backend + API for the 24h swimming event in Hamburg.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sundown46/Ticker24.git"
+  },
+  "keywords": [
+    "liveticker",
+    "node",
+    "nodejs",
+    "sport",
+    "event",
+    "livehack"
+  ],
+  "author": "Leon Evers",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sundown46/Ticker24/issues"
+  },
+  "homepage": "https://github.com/sundown46/Ticker24#readme",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
