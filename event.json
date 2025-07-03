@@ -1,0 +1,59 @@
+{
+  "eventName": "24h Schwimmen 2026",
+  "colors": [
+    "red",
+    "blue",
+    "yellow",
+    "gray",
+    "black",
+    "purple",
+    "white",
+    "orange",
+    "green",
+    "pink"
+  ],
+  "teams": [
+    {
+      "name": "BWK & Friends",
+      "color": "blue",
+      "lane": 3
+    },
+    {
+      "name": "EKV",
+      "color": "black",
+      "lane": 4
+    },
+    {
+      "name": "HSU Piranhas",
+      "color": "yellow",
+      "lane": 1
+    },
+    {
+      "name": "UniBwM",
+      "color": "purple",
+      "lane": 1
+    }
+  ],
+  "lanes": [
+    {
+      "number": 1,
+      "helperToken": "lane1abc"
+    },
+    {
+      "number": 2,
+      "helperToken": "lane2def"
+    },
+    {
+      "number": 3,
+      "helperToken": "lane3ghi"
+    },
+    {
+      "number": 4,
+      "helperToken": "lane4jkl"
+    },
+    {
+      "number": 5,
+      "helperToken": "lane5mno"
+    }
+  ]
+}

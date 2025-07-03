@@ -25,6 +25,7 @@
   },
   "homepage": "https://github.com/sundown46/Ticker24#readme",
   "dependencies": {
-    "express": "^5.1.0"
+    "express": "^5.1.0",
+    "qrcode": "^1.5.4"
   }
 }

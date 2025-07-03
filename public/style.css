@@ -1,0 +1,181 @@
+/* ========== 🎨 Dark Theme für Liveticker & Counter ========== */
+body {
+  font-family: Arial, sans-serif;
+  background: #111;
+  color: #fff;
+  text-align: center;
+  margin: 0;
+  padding: 1rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+#teams {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.team-box {
+  background: #222;
+  padding: 1.5rem;
+  border-radius: 10px;
+  min-width: 200px;
+  font-size: 1.5rem;
+  box-shadow: 0 0 10px #0ff;
+}
+
+@media (max-width: 600px) {
+  .team-box {
+    font-size: 1.2rem;
+    padding: 1rem;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+}
+
+canvas {
+  max-width: 100%;
+  height: 80vh;
+}
+
+#team-select {
+  margin-bottom: 1rem;
+}
+
+button#increment {
+  font-size: 2rem;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  border: none;
+  background: #00c8ff;
+  color: #fff;
+  box-shadow: 0 0 10px #00c8ff;
+}
+
+button#increment:active {
+  background: #009fc0;
+}
+
+#status {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+}
+
+/* ========== ☀️ Helles Theme für Admin-Seite (Dark-Mode Safe) ========== */
+.admin-page {
+  background-color: #f5f7fa !important; /* Hell erzwingen */
+  color: #333 !important;               /* Text dunkel erzwingen */
+}
+
+.admin-page * {
+  color: #333 !important;               /* Alle Texte dunkel */
+}
+
+.admin-page h1, 
+.admin-page h2, 
+.admin-page h3 {
+  text-align: center;
+  color: #2c3e50 !important;
+}
+
+.admin-page section {
+  background: rgba(255, 255, 255, 0.95); /* leicht transparent */
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1rem;
+  margin: 1rem auto;
+  max-width: 800px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+}
+
+.admin-page input[type="text"], 
+.admin-page select {
+  padding: 0.5rem;
+  margin: 0.5rem 0;
+  width: calc(100% - 1rem);
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background: #fff !important;
+  color: #333 !important;
+}
+
+.admin-page button {
+  background-color: #3498db;
+  color: #fff !important;
+  border: none;
+  border-radius: 5px;
+  padding: 0.6rem 1rem;
+  margin: 0.3rem;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.admin-page button:hover {
+  background-color: #2980b9;
+}
+
+.admin-page table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 0.5rem;
+  background: #fff !important;
+}
+
+.admin-page th, 
+.admin-page td {
+  border: 1px solid #ddd;
+  padding: 0.5rem;
+  text-align: center;
+  color: #333 !important;
+}
+
+.admin-page th {
+  background-color: #f0f0f0 !important;
+}
+
+.admin-page #color-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.3rem 0;
+}
+
+.admin-page .modal {
+  display: none;
+  position: fixed;
+  z-index: 10;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.5);
+}
+
+.admin-page .modal-content {
+  background-color: #fff;
+  margin: 10% auto;
+  padding: 1rem;
+  border: 1px solid #888;
+  width: 300px;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.admin-page .close-btn {
+  color: #aaa;
+  float: right;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.admin-page .close-btn:hover {
+  color: #000;
+}

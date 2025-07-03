@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin – 24h Schwimmen</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="admin-page">
+  <h1>🏊‍♂️ Adminbereich – 24h Schwimmen</h1>
+
+  <!-- Eventname -->
+  <section>
+    <h2>🏁 Eventname</h2>
+    <input type="text" id="event-name" placeholder="Eventname eingeben" />
+    <button id="save-event-name">💾 Speichern</button>
+  </section>
+
+<!-- Farben -->
+<section>
+  <h2>🎨 Badekappenfarben</h2>
+  <ul id="color-list"></ul>
+
+  <div style="margin-top: 1rem;">
+    <label for="preset-colors">Typische Farben:</label>
+    <select id="preset-colors">
+      <option value="">-- Bitte wählen --</option>
+      <option value="red">Red</option>
+      <option value="blue">Blue</option>
+      <option value="yellow">Yellow</option>
+      <option value="green">Green</option>
+      <option value="purple">Purple</option>
+      <option value="orange">Orange</option>
+      <option value="pink">Pink</option>
+      <option value="gray">Gray</option>
+      <option value="black">Black</option>
+      <option value="white">White</option>
+    </select>
+    <button id="add-preset-color">➕ Hinzufügen</button>
+  </div>
+
+  <div style="margin-top: 1rem;">
+    <label for="custom-color">Individuelle Farbe:</label>
+    <input type="color" id="custom-color" />
+    <button id="add-custom-color">➕ Hinzufügen</button>
+  </div>
+</section>
+
+
+  <!-- Teams -->
+  <section>
+    <h2>🏊 Teams</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Farbe</th>
+          <th>Bahn</th>
+          <th>Aktionen</th>
+        </tr>
+      </thead>
+      <tbody id="team-list"></tbody>
+    </table>
+
+    <h3>➕ Neues Team hinzufügen</h3>
+    <input type="text" id="new-team-name" placeholder="Teamname" />
+    <select id="new-team-color"></select>
+    <select id="new-team-lane"></select>
+    <button id="add-team">➕ Hinzufügen</button>
+  </section>
+
+  <!-- Bahnen -->
+  <section>
+    <h2>🏊‍♀️ Bahnen & Tokens</h2>
+    <ul id="lane-list"></ul>
+  </section>
+
+  <!-- Event zurücksetzen -->
+  <section>
+    <h2>🛑 Event zurücksetzen</h2>
+    <button id="reset-event">⚠️ Event zurücksetzen</button>
+  </section>
+
+  <!-- QR-Code Modal -->
+  <div id="qr-modal" class="modal">
+    <div class="modal-content">
+      <span class="close-btn">&times;</span>
+      <h3>📱 QR-Code</h3>
+      <img id="qr-code" alt="QR-Code" />
+    </div>
+  </div>
+
+  <script src="admin.js"></script>
+</body>
+</html>

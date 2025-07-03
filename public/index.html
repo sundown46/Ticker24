@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Liveticker 24h Schwimmen</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <h1 id="event-title">Ladet...</h1>
+    <canvas id="chartCanvas"></canvas>
+    <script src="dashboard.js"></script>    
+    <script>
+      // 📝 Eventnamen dynamisch laden
+      fetch('/api/event')
+        .then(res => res.json())
+        .then(data => {
+          document.getElementById('event-title').textContent = `Liveticker – ${data.eventName}`;
+          document.title = `Liveticker ${data.eventName}`;
+        })
+        .catch(err => {
+          console.error('Fehler beim Laden des Eventnamens:', err);
+          document.getElementById('event-title').textContent = 'Liveticker';
+        });
+    </script>
+</body>
+</html>
